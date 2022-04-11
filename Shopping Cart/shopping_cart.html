@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <header>
+    <nav class="navbar">
+      <div class="container1">
+        <a href="../Home/index.html" class="logoname">Burger Bros</a>
+        <ul class="navbar-list">
+          <div id="nav-items">
+            <li class="nav-item">
+              <a href="../Home/index.html">
+                <img src="../Icons/home.png" alt="Home Page" height="20px" wieght="20px">
+                <span class="navdesc">Home</span>
+              </a>
+            </li>
+          </div>
+          <li class="nav-item">
+            <a href="../Menu/menu.html">
+              <img src="../Icons/burger.png" alt="Food Menu" height="20px" wieght="20px">
+              <span class="navdesc">Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Deals/Deals.html">
+              <img src="../Icons/megaphone.png" alt="Deals" height="20px" wieght="20px">
+              <span class="navdesc">Deals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Shopping Cart/shopping_cart.html">
+              <img src="../Icons/shopping-cart.png" alt="Shopping Cart" height="20px" wieght="20px">
+              <span class="navdesc">Shopping Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../E-wallet/ewallet.html">
+              <img src="../Icons/wallet.png" alt="Wallet" height="20px" wieght="20px">
+              <span class="navdesc">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Login_Sign up/login.html">
+              <img src="../Icons/user.png" alt="login/signup" height="20px" wieght="20px">
+              <span class="navdesc">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr>
+
+  <div>
+    <h2>Delivery Address</h2>
+
+    <div class="card">
+      <address>
+        Danial Lee<br />
+        40 Subang Heights West, Subang Jaya, Selangor,<br />
+        Malaysia
+      </address>
+    </div>
+  </div>
+
+  <div class="basket">
+    <div class="basket-module">
+      <label for="promo-code">Enter a promotional code</label>
+      <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+      <button class="promo-code-cta">Apply</button>
+    </div>
+    <div class="basket-labels">
+      <ul>
+        <li class="item item-heading">Item</li>
+        <li class="price">Price</li>
+        <li class="quantity">Quantity</li>
+        <li class="subtotal">Subtotal</li>
+      </ul>
+    </div>
+    <div class="basket-product">
+      <div class="item">
+        <div class="product-image">
+          <img src="../Food images/Beef Burger Set.png" alt="Placeholder Image 2" class="product-frame">
+        </div>
+        <div class="product-details">
+          <h1><strong><span class="item-quantity">1</span> x Beef Burger Set</strong></h1>
+        </div>
+      </div>
+      <div class="price">15.90</div>
+      <div class="quantity">
+        <input type="number" value="1" min="1" class="quantity-field">
+      </div>
+      <div class="subtotal">15.90</div>
+      <div class="remove">
+        <button>Remove</button>
+      </div>
+    </div>
+    <div class="basket-product">
+      <div class="item">
+        <div class="product-image">
+          <img src="../Food images/chicken burger.png" alt="Placeholder Image 2" class="product-frame">
+        </div>
+        <div class="product-details">
+          <h1><strong><span class="item-quantity">1</span> x Chicken Burger</strong></h1>
+        </div>
+      </div>
+      <div class="price">9.90</div>
+      <div class="quantity">
+        <input type="number" value="1" min="1" class="quantity-field">
+      </div>
+      <div class="subtotal">9.90</div>
+      <div class="remove">
+        <button>Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="summary">
+      <div class="summary-total-items"><span class="total-items">Items in your Bag</span> </div>
+      <div class="summary-subtotal">
+        <div class="subtotal-title">Subtotal</div>
+        <div class="subtotal-value final-value" id="basket-subtotal">25.80</div>
+        <div class="summary-promo hide">
+          <div class="promo-title">Promotion</div>
+          <div class="promo-value final-value" id="basket-promo"></div>
+        </div>
+      </div>
+      <div class="summary-delivery">
+        <select name="delivery-collection" class="summary-delivery selection">
+          <option value="0" selected="selected">Select Collection or Delivery</option>
+          <option value="delivery">Delivery</option>
+          <option value="self collect">Self Collect</option>
+        </select>
+      </div>
+      <div class="payment-method">
+        <select name="payment-method" class="payment-method selection">
+          <option value="0" selected="selected">Select Payment Method</option>
+          <option value="Visa/Mastercard">Visa/Mastercard</option>
+          <option value="FPX">FPX</option>
+          <option value="Cash">Cash</option>
+        </select>
+      </div>
+      <div class="estimated-delivery" class="delivery-estimation"></div>
+      <div class="delivery-estimation-value final-value" id="delivery-subtotal"></div>
+      <div class="summary-total">
+        <div class="total-title">Total</div>
+        <div class="total-value final-value" id="basket-total">30.80</div>
+      </div>
+      <div class="delivery-time" class="delivery-time">Delivery Time : 3:00PM</div>
+      <div class="delivery-time-value final-value" id="delivery-subtotal"></div>
+      <div class="summary-checkout">
+        <a href="../Self Collect/Self Collect.html"><button class="checkout-cta">Go to Secure Checkout</button></a>
+      </div>
+    </div>
+  </aside>
+  </main>
+
+  <!--Footer-->
+  <section class="contact">
+    <div class="contactdiv">
+      <h2>Contact info</h2>
+      <table class="contacttable">
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Main Location:</h5><span class="contactinfo">Malaysia</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Phone No:</h5><span class="contactinfo">012-3457890</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">E-mail:</h5><span class="contactinfo">burgerbrosmsia@gmail.com</span>
+          </td>
+        </tr>
+      </table>
+      <div class="socialmedialogos">
+        <a href="https://www.instagram.com/">
+          <img class="socialmedia" src="../social media logo/instagram.png" alt="#">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img class="socialmedia" src="../social media logo/facebook.png" alt="#">
+        </a>
+        <a href="https://twitter.com/">
+          <img class="socialmedia" src="../social media logo/twitter.png" alt="#">
+        </a>
+      </div>
+    </div>
+    <div id='map' style='width: 400px; height: 200px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYmFuZ2Jvb210YXRhIiwiYSI6ImNrdjBneWc5ajA2ZXoyeHA3eDAzd2cxaTkifQ.z0FsPLibJBIcBzLMbtEGBw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      });
+    </script>
+  </section>
+
+</body>
+
+</html>

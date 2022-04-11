@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: rgb(163, 188, 182);
+      background: linear-gradient(90deg, rgba(163, 188, 182, 1) 8%, rgba(218, 222, 212, 1) 100%);
+      font-family: Arial, Helvetica, Calibri;
+    }
+
+    h1 {
+      color: #3C403D;
+      margin-top: 10px;
+    }
+
+    h2 {
+      color: #3C403D;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #39603D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container1 {
+      width: 30%;
+      padding: 30px 50px 50px 50px;
+      border-radius: 45px;
+      background: #DADED4;
+      margin: 100px auto;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 2px;
+    }
+
+    .passinput{
+      margin-bottom: 10px;
+    }
+
+    .notmember {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+
+    <div class="container1">
+
+      <h1 style="text-align:center;padding-top: 10px;text-align:center;color:#3C403D;font-size:40px;font-weight:bold;">Burger Bros</h1>
+      <h2 style="text-align:center;">Login Form</h2>
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" name="uname" required>
+
+      <br /><br />
+
+      <label for="psw"><b>Password</b></label>
+      <input class="passinput" type="password" name="psw" required>
+
+
+      <br /><br /><br>
+      <a href="../Home/index.html"><button type="submit" onclick="document.location='../Home/index.html'"><b>Login</b></button></a>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+
+
+      <br /><br />
+
+      <p class="notmember" >Not a member?<a href="../Login_Sign up/signup.html"> Sign Up here</a> </p> 
+    </div>
+  </form>
+
+</body>
+
+</html>

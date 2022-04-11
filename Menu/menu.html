@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Menu</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="menu.css">
+  <script src="menu.js" async></script>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <header>
+    <nav class="navbar">
+      <div class="container1">
+        <a href="../Home/index.html" class="logoname">Burger Bros</a>
+        <ul class="navbar-list">
+          <div id="nav-items">
+            <li class="nav-item">
+              <a href="../Home/index.html">
+                <img src="../Icons/home.png" alt="Home Page" height="20px" wieght="20px">
+                <span class="navdesc">Home</span>
+              </a>
+            </li>
+          </div>
+          <li class="nav-item">
+            <a href="../Menu/menu.html">
+              <img src="../Icons/burger.png" alt="Food Menu" height="20px" wieght="20px">
+              <span class="navdesc">Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Deals/Deals.html">
+              <img src="../Icons/megaphone.png" alt="Deals" height="20px" wieght="20px">
+              <span class="navdesc">Deals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Shopping Cart/shopping_cart.html">
+              <img src="../Icons/shopping-cart.png" alt="Shopping Cart" height="20px" wieght="20px">
+              <span class="navdesc">Shopping Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../E-wallet/ewallet.html">
+              <img src="../Icons/wallet.png" alt="Wallet" height="20px" wieght="20px">
+              <span class="navdesc">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Login_Sign up/login.html">
+              <img src="../Icons/user.png" alt="login/signup" height="20px" wieght="20px">
+              <span class="navdesc">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr>
+
+  <div class="bgimg">
+  <!--Search bar-->
+  <div class="searchbar">
+    <input type="text" class="searchbar-input" placeholder="Search...">
+    <img src="../Icons/search.png" alt="#" class="searchbar-img">
+  </div>
+
+  <!--Menu-->
+  <section class="menusec">
+    <p style="text-align:center;color: #39603D; font-size:100px;font-weight:bold;font-family:Amasis MT Pro Black">Main</p>
+    <div class="secdisplay">
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/cheeseburge.jpg" alt="#">
+        <p class="fooddesc">Cheeseburger</p>
+        <select name="Quantity">
+          <option value="2">A la carte-Rm 13.00</option>
+          <option value="1" selected>Set Meal-RM15.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/Crispy-Chicken-Burger.jpg" alt="#">
+        <p class="fooddesc">Crispy Chicken Burger</p>
+        <select name="Quantity">
+          <option value="2">A la carte-Rm 11.00</option>
+          <option value="1" selected>Set Meal-RM15.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon" id="break">
+        <img class="foodimg" src="../Food images/fried chicken.jpg" alt="#">
+        <p class="fooddesc">Crispy Fried Chicken</p>
+        <select name="select variation">
+          <option value="Hot & Spicy">Hot & Spicy</option>
+          <option value="Mixed">Mixed</option>
+          <option value="Original Recipe" selected>Original Recipe</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/Crispy fried fish burger.jpeg" alt="#">
+        <p class="fooddesc">Crispy fish burger</p>
+        <select name="Quantity">
+          <option value="2">A la carte-Rm 13.00</option>
+          <option value="1" selected>Set Meal-RM18.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/beef burger.jpg" alt="#">
+        <p class="fooddesc">Beef Burger</p>
+        <select name="Quantity">
+          <option value="2">A la carte-Rm 13.00</option>
+          <option value="1" selected>Set Meal-RM18.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon" id="break">
+        <img class="foodimg" src="../Food images/fish and chips.jpg" alt="#">
+        <p class="fooddesc">Fish & Chips</p>
+        <select name="Quantity">
+          <option value="2">A la carte-Rm 14.00</option>
+          <option value="1" selected>Set Meal-RM19.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+  </section>
+
+  <section class="menusec">
+    <p style="text-align:center;color: #39603D; font-size:100px;font-weight:bold;font-family:Amasis MT Pro Black">Sides</p>
+
+    <div class="secdisplay">
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/french fries.jpg" alt="#">
+        <p class="fooddesc">French Fries</p>
+        <select name="Quantity">
+          <option value="2">Large-Rm 6.00</option>
+          <option value="1" selected>Medium-RM 4.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/Onion-Rings.jpg" alt="#">
+        <p class="fooddesc">Onion Rings</p>
+        <select name="Quantity">
+          <option value="2">Large-Rm 7.00</option>
+          <option value="1" selected>Medium-RM 5.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/popcorn chicken.jpg" alt="#">
+        <p class="fooddesc">Popcorn Chicken</p>
+        <select name="Quantity">
+          <option value="10pcs Set Meal-RM14.00">Large-RM 10.00</option>
+          <option value="14pcs Set Meal-RM19.00" selected>Medium-RM 8.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/cheesy wedges.png" alt="#">
+        <p class="fooddesc">Cheesy wedges</p>
+        <select name="Quantity">
+          <option value="2">Large-RM 7.00</option>
+          <option value="1" selected>Medium-RM 6.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/macaroni.jpg" alt="#">
+        <p class="fooddesc">Macaroni</p>
+        <select name="Quantity">
+          <option value="2">Large-Rm 8.00</option>
+          <option value="1" selected>Medium-RM 5.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon" id="break">
+        <img class="foodimg" src="../Food images/coleslaw.jpeg" alt="#">
+        <p class="fooddesc">Coleslaw</p>
+        <select name="Quantity">
+          <option value="2">Large-Rm 6.00</option>
+          <option value="1" selected>Medium-RM 4.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="menusec" id="lastsec">
+    <p style="text-align:center;color: #39603D; font-size:100px;font-weight:bold;font-family:Amasis MT Pro Black">Drinks</p>
+
+    <div class="secdisplay">
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/vanilla milkshake.jpg" alt="#">
+        <p class="fooddesc">Vanilla Milkshake-RM 9.00</p>
+        <select name="Quantity">
+          <option value="2">Large-4.00</option>
+          <option value="1" selected>Medium-RM 3.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/strawberry milkshake.jpg" alt="#">
+        <p class="fooddesc">Strawberry Milkshake-RM 9.00</p>
+        <select name="Quantity">
+          <option value="2">Large-4.00</option>
+          <option value="1" selected>Medium-RM 3.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/chocolate milkshake.jpg" alt="#">
+        <p class="fooddesc">Chocolate Milkshake-RM 9.00</p>
+        <select name="Quantity">
+          <option value="2">Large-4.00</option>
+          <option value="1" selected>Medium-RM 3.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/100 plus.jpg" alt="#">
+        <p class="fooddesc">100 Plus</p>
+        <select name="Quantity">
+          <option value="2">Large-4.00</option>
+          <option value="1" selected>Medium-RM 3.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/coke.jpg" alt="#">
+        <p class="fooddesc">Coke</p>
+        <select name="Quantity">
+          <option value="2">Large-4.00</option>
+          <option value="1" selected>Medium-RM 3.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="foodcon">
+        <img class="foodimg" src="../Food images/sprite.jpeg" alt="#">
+        <p class="fooddesc">Sprite</p>
+        <select name="Quantity">
+          <option value="2">Large-4.00</option>
+          <option value="1" selected>Medium-RM 3.00</option>
+        </select>
+        <button class="add_to_cart_button" type="button">ADD TO CART</button>
+      </div>
+
+  </section>
+</div>
+
+  <!--Footer-->
+  <section class="contact">
+    <div class="contactdiv">
+      <h2>Contact info</h2>
+      <table class="contacttable">
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Main Location:</h5><span class="contactinfo">Malaysia</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Phone No:</h5><span class="contactinfo">012-3457890</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">E-mail:</h5><span class="contactinfo">burgerbrosmsia@gmail.com</span>
+          </td>
+        </tr>
+      </table>
+      <div class="socialmedialogos">
+        <a href="https://www.instagram.com/">
+          <img class="socialmedia" src="../social media logo/instagram.png" alt="#">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img class="socialmedia" src="../social media logo/facebook.png" alt="#">
+        </a>
+        <a href="https://twitter.com/">
+          <img class="socialmedia" src="../social media logo/twitter.png" alt="#">
+        </a>
+      </div>
+    </div>
+    <div id='map' style='width: 400px; height: 200px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYmFuZ2Jvb210YXRhIiwiYSI6ImNrdjBneWc5ajA2ZXoyeHA3eDAzd2cxaTkifQ.z0FsPLibJBIcBzLMbtEGBw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      });
+    </script>
+  </section>
+
+</body>
+
+</html>

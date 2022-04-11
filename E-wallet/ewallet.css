@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+html {
+    background: #DADED4;
+
+}
+
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3C403D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3C403D;
+    height: 100%;
+}
+
+/* Navigation Bar*/
+.navbar {
+    padding: 20px 30px;
+    background-color: #DADED4;
+    color: #3C403D;
+  }
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.logoname {
+    color: #39603D;
+    font-size: 40px;
+    font-weight: 550;
+    font-family:'Times New Roman', serif;
+}
+
+.navdesc {
+    color: #434343;
+}
+
+.nav-item {
+    margin: 5px 9px;
+}
+
+span.navdesc:hover, .nav-item:hover {
+    color: white;
+    background-color: #39603D;
+}
+
+span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3C403D;
+}
+
+hr {
+    height: 0.5px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* E-wallet*/
+h1 {
+    color: #39603D;
+    margin-bottom: 20px;
+}
+
+.ewalletsec {
+    margin-bottom: 50px;
+}
+
+.ewallet {
+    margin: 40px 25vw;
+    padding: 40px 40px 40px 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.user_details {
+    margin-left: 30px;
+    margin-top: 23px;
+}
+
+.user_profile {
+    height: 100px;
+    width: 100px;
+}
+
+.wallet {
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.username {
+    margin-bottom: 3px;
+    position: relative;
+}
+
+.topup {
+    color:#39603D;
+    font-weight: bold;
+}
+
+.topup:hover {
+    opacity: 0.7;
+}
+
+hr {
+    margin-bottom: 7px;
+    margin-top: 2px;
+}
+
+/*Rewards*/
+.rewards, .transhis {
+    margin: 40px 25vw;
+    padding: 40px 40px 40px 40px;
+    background-color: #A3BCB6;
+    border-radius: 10px;
+}
+
+.coupun, .coin {
+    display: flex;
+    flex-direction: row;
+}
+
+.paymentdetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr.rewardline {
+    margin-bottom: 30px;
+}
+
+.reward-item, .payment {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.rewarddesc, .transdesc, .date {
+    margin-top: 3px;
+    color: #3C403D;
+}
+
+.transdesc {
+    margin-right: 3px;
+}
+
+.date {
+    margin-left: 20px;
+}
+
+.success {
+    margin-top: 3px;
+    color: #39603D;
+    margin-left: 20px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.claim {
+    margin-left: 20px;
+    padding: 2px 12px;
+    background-color: #39603D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.claim:hover {
+    opacity: 0.7;
+}
+
+/*Transactional History*/
+.transhis {
+    margin: 40px 25vw;
+    padding: 40px 40px 40px 40px;
+    background-color: #A3BCB6;
+    border-radius: 10px;
+}
+
+
+
+/*Footer*/
+.contact {
+    margin-top: 100px;
+    padding: 50px 11vw;
+    background-color: #39603D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #DADED4;
+    width: 100%;
+}
+
+.contacttable {
+    margin-left: 0px;
+}
+
+.contactcell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px 3px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+h5.contactques {
+    margin-right: 6px;
+}
+
+.contactques {
+    font-size: 18px;
+}
+
+.contactinfo{
+    font-size: 16px;
+    color: white;
+}
+
+.socialmedialogos {
+    margin-left: 3px;
+}
+
+.socialmedia {
+    height: 26px;
+    width: 26px;
+    margin: 8px 5px 0px 5px;
+}

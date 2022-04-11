@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Self Collect</title>
+  <link rel="stylesheet" href="selfcollect.css">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    body {
+      background: rgb(163, 188, 182);
+      background: linear-gradient(90deg, rgba(163, 188, 182, 1) 8%, rgba(218, 222, 212, 1) 100%);
+      font-family: Arial, Helvetica, Calibri;
+    }
+  </style>
+</head>
+
+<body style="background-color:#DADED4">
+  <!--Navigation Bar-->
+  <header>
+    <nav class="navbar">
+      <div class="container1">
+        <a href="../Home/homepage.html" class="logoname">Burger Bros</a>
+        <ul class="navbar-list">
+          <div id="nav-items">
+            <li class="nav-item">
+              <a href="../Home/homepage.html">
+                <img src="../Icons/home.png" alt="Home Page" height="20px" wieght="20px">
+                <span class="navdesc">Home</span>
+              </a>
+            </li>
+          </div>
+          <li class="nav-item">
+            <a href="../Menu/menu.html">
+              <img src="../Icons/burger.png" alt="Food Menu" height="20px" wieght="20px">
+              <span class="navdesc">Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Deals/Deals.html">
+              <img src="../Icons/megaphone.png" alt="Deals" height="20px" wieght="20px">
+              <span class="navdesc">Deals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Shopping Cart/shopping_cart.html">
+              <img src="../Icons/shopping-cart.png" alt="Shopping Cart" height="20px" wieght="20px">
+              <span class="navdesc">Shopping Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../E-wallet/ewallet.html">
+              <img src="../Icons/wallet.png" alt="Wallet" height="20px" wieght="20px">
+              <span class="navdesc">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Login_Sign up/login.html">
+              <img src="../Icons/user.png" alt="login/signup" height="20px" wieght="20px">
+              <span class="navdesc">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr class="afternav">
+
+  <!--Self Collect Form-->
+
+  <form>
+    <div class="content">
+      <h1 class="formtitle" style="margin-bottom: 40px;text-align:center;padding-top: 10px;text-align:center;color:#3C403D;font-size:40px;font-weight:bold;">
+        Self Collect
+      </h1>
+      <div class="summary">
+        <h3>Summary</h3>
+        <p class="sumdescitems">Items in your bag: </p>
+        <span class="sumdescans">1x Beef Burger Set, </span>
+        <span class="sumdescans">1x Chicken Burger</span><br>
+        <br>
+        <span class="sumdesctotal">Total:</span>
+        <span>RM30.80</span><br>
+        <br>
+        <span class="sumdesctime">Food ready on:</span>
+        <span>3.00pm</span>
+      </div>
+
+
+      <label for="state"><b>Restaurant Address</b></label><br>
+      <select id="state" class="state">
+        <option value="WP">WP</option>
+        <option value="Selangor">Selangor</option>
+        <option value="Penang" selected="selected">Penang</option>
+        <option value="Johor">Johor</option>
+        <option value="Kedah">Kedah</option>
+        <option value="Kelantan">Kelantan</option>
+        <option value="Melaka">Melaka</option>
+        <option value="NegeriSembilan">Negeri Sembilan</option>
+        <option value="Pahang">Pahang</option>
+        <option value="Perlis">Perlis</option>
+        <option value="Perak">Perak</option>
+        <option value="Terengganu">Terengganu</option>
+        <option value="Sabah">Sabah</option>
+        <option value="Sarawak">Sarawak</option>
+      </select><br />
+
+      <label for="time"><b>Collection Time</b></label><br>
+      <select id="time" class="time">
+        <option value="11.00am">11.00am</option>
+        <option value="12.00pm">12.00pm</option>
+        <option value="1.00pm" selected="selected">1.00pm</option>
+        <option value="2.00pm">2.00pm</option>
+        <option value="3.00pm">3.00pm</option>
+        <option value="4.00pm">4.00pm</option>
+        <option value="5.00pm">5.00pm</option>
+        <option value="6.00pm">6.00pm</option>
+      </select><br />
+
+
+      <div style="text-align:center; margin-top: 10px;">
+        <a class="inputbutton" href="../Home/homepage.html">       
+          <input type="submit" value="Pay">
+        </a>
+        <a class="inputbutton" href="../Home/homepage.html">          
+          <input type="reset" value="Cancel">
+        </a>        
+      </div>
+    </div>
+  </form>
+
+  <!--Footer-->
+  <section class="contact">
+    <div class="contactdiv">
+      <h2>Contact info</h2>
+      <table class="contacttable">
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Main Location:</h5><span class="contactinfo">Malaysia</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Phone No:</h5><span class="contactinfo">012-3457890</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">E-mail:</h5><span class="contactinfo">burgerbrosmsia@gmail.com</span>
+          </td>
+        </tr>
+      </table>
+      <div class="socialmedialogos">
+        <a href="https://www.instagram.com/">
+          <img class="socialmedia" src="../social media logo/instagram.png" alt="#">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img class="socialmedia" src="../social media logo/facebook.png" alt="#">
+        </a>
+        <a href="https://twitter.com/">
+          <img class="socialmedia" src="../social media logo/twitter.png" alt="#">
+        </a>
+      </div>
+    </div>
+    <div id='map' style='width: 400px; height: 200px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYmFuZ2Jvb210YXRhIiwiYSI6ImNrdjBneWc5ajA2ZXoyeHA3eDAzd2cxaTkifQ.z0FsPLibJBIcBzLMbtEGBw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      });
+    </script>
+  </section>
+</body>
+
+</html>

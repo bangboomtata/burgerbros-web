@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <div class="container1">
+                <a href="../Home/index.html" class="logoname">Burger Bros</a>
+                <ul class="navbar-list">
+                    <div id="nav-items">
+                        <li class="nav-item">
+                            <a href="index.html">
+                                <img src="../Icons/home.png" alt="Home Page" height="20px" wieght="20px">
+                                <span class="navdesc">Home</span>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="nav-item">
+                        <a href="../Menu/menu.html">
+                            <img src="../Icons/burger.png" alt="Food Menu" height="20px" wieght="20px">
+                            <span class="navdesc">Menu</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Deals/Deals.html">
+                            <img src="../Icons/megaphone.png" alt="Deals" height="20px" wieght="20px">
+                            <span class="navdesc">Deals</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Shopping Cart/shopping_cart.html">
+                            <img src="../Icons/shopping-cart.png" alt="Shopping Cart" height="20px" wieght="20px">
+                            <span class="navdesc">Shopping Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../E-wallet/ewallet.html">
+                            <img src="../Icons/wallet.png" alt="Wallet" height="20px" wieght="20px">
+                            <span class="navdesc">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Login_Sign up/login.html">
+                            <img src="../Icons/user.png" alt="login/signup" height="20px" wieght="20px">
+                            <span class="navdesc">Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bgimg">
+        <div class="nameslogan">
+            <h1>Burger Bros</h1>
+            <p class="slogan">"More than just your average burger" </p>
+        </div>
+    </div>
+
+    <!--Search bar-->
+    <div class="searchbar">
+        <input type="text" class="searchbar-input" placeholder="Search...">
+        <img src="../Icons/search.png" alt="#" class="searchbar-img">
+    </div>
+
+    <!--Content-->
+    <!--Menu-->
+    <section class="latestsec">
+        <div class="sectitle1">
+            <a class="sectitlebutton" href="../Menu/menu.html">
+                <h3 class="latest">Menu</h3>
+                <img class="rightarr" src="../Icons/right arrow.png" alt="#">
+            </a>
+        </div>
+        <div class="secdisplay">
+            <img class="arrow" src="../Icons/left-arrow.png" alt="#">
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/cheeseburge.jpg" alt="#">
+                    <p class="fooddesc1">Cheese Burger</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem2.jpg" alt="#">
+                    <p class="fooddesc1">Beef Burger</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/Crispy-Chicken-Burger.jpg" alt="#">
+                    <p class="fooddesc1">Crispy Chicken Burger</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem4.jpg" alt="#">
+                    <p class="fooddesc1">Pork Burger</p>
+                </div>
+            </a>
+            <img class="arrow" src="../Icons/right-arrow.png" alt="#">
+        </div>
+    </section>
+   
+
+    <!--new items-->
+    <section class="newitemsec">
+        <div class="sectitle2">
+            <a class="sectitlebutton" href="../Menu/menu.html">
+                <h3 class="newlunch">New Arrivals</h3>
+                <img class="rightarr" src="../Icons/right arrow.png" alt="#">
+            </a>
+        </div>
+        <div class="secdisplay">
+            <img class="arrow" src="../Icons/left-arrow.png" alt="#">
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem1.jpg" alt="#">
+                    <p class="fooddesc2">Cheese Pork Burger</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem2.jpg" alt="#">
+                    <p class="fooddesc2">Beef Burger</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem3.jpg" alt="#">
+                    <p class="fooddesc2">Chicken Nuggets</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/Crispy fried fish burger.jpeg" alt="#">
+                    <p class="fooddesc2">Crispy Fish Burger</p>
+                </div>
+            </a>
+            <img class="arrow" src="../Icons/right-arrow.png" alt="#">
+        </div>
+    </section>
+
+    <!--Promotion-->
+    <section class="promosec">
+        <div class="sectitle3">
+            <a class="sectitlebutton" href="../Deals/Deals.html">
+                <h3 class="promotion">Promotional deals</h3>
+                <img class="rightarr" src="../Icons/right arrow.png" alt="#">
+            </a>
+            <a href="#">
+                <span class="discount"> Up to 50% off </span>
+            </a>
+            
+        </div>
+        <div class="secdisplay">
+            <img class="arrow" src="../Icons/left-arrow.png" alt="#">
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/cheeseburge.jpg" alt="#">
+                    <p class="fooddesc3">Cheese Burger</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/french fries.jpg" alt="#">
+                    <p class="fooddesc3">French Fries</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem3.jpg" alt="#">
+                    <p class="fooddesc3">Chicken Nuggets</p>
+                </div>
+            </a>
+
+            <a href="../Menu/menu.html">
+                <div class="foodcon">
+                    <img class="foodimg" src="../Food images/fooditem4.jpg" alt="#">
+                    <p class="fooddesc3">Pork Burger</p>
+                </div>
+            </a>
+
+            <img class="arrow" src="../Icons/right-arrow.png" alt="#">
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="contact">
+        <div class="contactdiv">
+            <h2>Contact info</h2>
+            <table class="contacttable">
+                <tr>
+                    <td class="contactcell">
+                        <h5 class="contactques">Main Location:</h5><span class="contactinfo">Malaysia</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contactcell">
+                        <h5 class="contactques">Phone No:</h5><span class="contactinfo">012-3457890</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contactcell">
+                        <h5 class="contactques">E-mail:</h5><span class="contactinfo">burgerbrosmsia@gmail.com</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="socialmedialogos">
+                <a href="https://www.instagram.com/">
+                    <img class="socialmedia" src="../social media logo/instagram.png" alt="#">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="socialmedia" src="../social media logo/facebook.png" alt="#">
+                </a>
+                <a href="https://twitter.com/">
+                    <img class="socialmedia" src="../social media logo/twitter.png" alt="#">
+                </a>
+            </div>
+        </div>
+        <div id='map' style='width: 400px; height: 200px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmFuZ2Jvb210YXRhIiwiYSI6ImNrdjBneWc5ajA2ZXoyeHA3eDAzd2cxaTkifQ.z0FsPLibJBIcBzLMbtEGBw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-71.060982, 42.35725],
+                zoom: 18,
+            });
+        </script>
+    </section>
+</body>
+
+</html>

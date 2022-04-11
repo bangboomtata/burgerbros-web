@@ -1,0 +1,178 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+    .content {
+        background: rgb(163, 188, 182);
+        font-family: Arial, Helvetica, Calibri;
+        padding-bottom: 100px;
+      }
+/* Navigation Bar*/
+.navbar {
+    padding: 20px 30px;
+    background-color: #DADED4;
+    color: #3C403D;
+  }
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.logoname {
+    color: #39603D;
+    font-size: 40px;
+    font-weight: 550;
+    font-family:'Times New Roman', serif;
+}
+
+.navdesc {
+    color: #434343;
+}
+
+.nav-item {
+    margin: 5px 9px;
+}
+
+span.navdesc:hover, .nav-item:hover {
+    color: white;
+    background-color: #39603D;
+}
+
+span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3C403D;
+}
+
+hr {
+    height: 0.5px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Self Collect Form*/
+.content {
+    width: 40%;
+    padding: 30px 50px 80px 50px;
+    border-radius: 45px;
+    background: #DADED4;
+    margin: 100px auto;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.summary {
+    background-color: #39603D;
+    width: 50%;
+    height: auto;
+    margin: 0px auto 40px auto;
+    border-radius: 5px;
+    padding: 22px;
+    color: white;
+
+}
+
+.sumdescans, span {
+    color: #A3BCB6;
+}
+
+.sumdesc, .sumdesctotal, .sumdesctime {
+    color: white;
+
+}
+
+.sumdescitems {
+    margin-bottom: 4px;
+    color: white;
+
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+input, .inputbutton {
+    background-color: #39603D;
+    color: white;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.inputbutton {
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border-radius: 8px;
+}
+
+/*Footer*/
+.contact {
+    padding: 50px 11vw;
+    background-color: #39603D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #DADED4;
+}
+
+.contacttable {
+    margin-left: 0px;
+}
+
+.contactcell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px 3px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+h5.contactques {
+    margin-right: 6px;
+}
+
+.contactques {
+    font-size: 18px;
+}
+
+.contactinfo{
+    font-size: 16px;
+    color: white;
+}
+
+.socialmedialogos {
+    margin-left: 3px;
+}
+
+.socialmedia {
+    height: 26px;
+    width: 26px;
+    margin: 8px 5px 0px 5px;
+}

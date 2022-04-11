@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-wallet</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="ewallet.css">
+</head>
+<body>
+  <!--Navigation Bar-->
+  <header>
+    <nav class="navbar">
+      <div class="container1">
+        <a href="../Home/index.html" class="logoname">Burger Bros</a>
+        <ul class="navbar-list">
+          <div id="nav-items">
+            <li class="nav-item">
+              <a href="../Home/index.html">
+                <img src="../Icons/home.png" alt="Home Page" height="20px" wieght="20px">
+                <span class="navdesc">Home</span>
+              </a>
+            </li>
+          </div>
+          <li class="nav-item">
+            <a href="../Menu/menu.html">
+              <img src="../Icons/burger.png" alt="Food Menu" height="20px" wieght="20px">
+              <span class="navdesc">Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Deals/Deals.html">
+              <img src="../Icons/megaphone.png" alt="Deals" height="20px" wieght="20px">
+              <span class="navdesc">Deals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Shopping Cart/shopping_cart.html">
+              <img src="../Icons/shopping-cart.png" alt="Shopping Cart" height="20px" wieght="20px">
+              <span class="navdesc">Shopping Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../E-wallet/ewallet.html">
+              <img src="../Icons/wallet.png" alt="Wallet" height="20px" wieght="20px">
+              <span class="navdesc">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../Login_Sign up/login.html">
+              <img src="../Icons/user.png" alt="login/signup" height="20px" wieght="20px">
+              <span class="navdesc">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr class="afternav">
+
+
+    <!--E-wallet-->
+    <section class="ewalletsec">
+        <div class="ewallet">
+            <h1>Burger Bros' Wallet</h1>
+            <div class="user">
+                <img class="user_profile" src="../Icons/user_profile.png" alt="user_profile">
+                <div class="user_details">
+                    <p class="username">Steven Adams</p>
+                    <img class="wallet" src="../Icons/wallet.png" alt="ewallet"> 
+                    <span class="balance">RM100.00</span> 
+                </div>
+            </div>
+            <hr>
+            <a href="topupbutton">           
+                 <p class="topup">Top up money</p>
+            </a>
+        </div>
+
+        <div class="rewards">
+            <h1>Rewards</h1>
+            <div class="reward">
+                <a class="coupun" href="#">
+                    <img class="reward-item" src="../Icons/coupun.png" alt="coupun">
+                    <p class="rewarddesc">20% discount coupun with minimum purchase of RM50</p>
+                    <button class="claim">Claim</button>
+                </a>
+            </div>
+            <hr class="rewardline">
+
+            <div class="reward">
+                <a class="coin" href="#">
+                    <img class="reward-item" src="../Icons/coin.png" alt="credits">
+                    <p class="rewarddesc">Reward of 50 credit points for every purchase of RM100</p>
+                    <button class="claim">Claim</button>
+                </a>
+            </div>
+            <hr class="rewardline">
+
+            <div class="reward">
+                <a class="coupun" href="#">
+                    <img class="reward-item" src="../Icons/coupun.png" alt="coupun">
+                    <p class="rewarddesc">Free shipping coupun without minimum purchase</p>
+                    <button class="claim">Claim</button>
+                </a>
+            </div>
+            <hr class="rewardline">
+
+            <div class="reward">
+                <a class="coin" href="#">
+                    <img class="reward-item" src="../Icons/coin.png" alt="credits">
+                    <p class="rewarddesc">Reward of 25 credit points for every purchase of RM50</p>
+                    <button class="claim">Claim</button>
+                </a>
+            </div>
+            <hr class="rewardline">
+        </div>
+        
+
+        <div class="transhis">
+            <h1>Transaction History</h1>
+            <div class="reward">
+                <a class="paymentdetails" href="#">
+                    <img class="payment" src="../Icons/mobile-payment.png" alt="payment">
+                    <p class="transdesc">Total</p>
+                    <p class="date">Date</p>
+                    <p class="success">Success/Fail</p>
+                </a>
+            </div>
+            <hr class="rewardline">
+
+            <div class="reward">
+                <a class="paymentdetails" href="#">
+                    <img class="payment" src="../Icons/mobile-payment.png" alt="payment">
+                    <p class="transdesc">RM25.00</p>
+                    <p class="date">Nov 05,2021</p>
+                    <p class="success">Success</p>
+                </a>
+            </div>
+            <hr class="rewardline">
+
+            <div class="reward">
+                <a class="paymentdetails" href="#">
+                    <img class="payment" src="../Icons/mobile-payment.png" alt="payment">
+                    <p class="transdesc">RM50.00</p>
+                    <p class="date">Nov 23,2021</p>
+                    <p class="success">Success</p>
+                </a>
+            </div>
+            <hr class="rewardline">
+
+            <div class="reward">
+                <a class="paymentdetails" href="#">
+                    <img class="payment" src="../Icons/mobile-payment.png" alt="payment">
+                    <p class="transdesc">RM100.00</p>
+                    <p class="date">Nov 26,2021</p>
+                    <p class="success">Success</p>
+                </a>
+            </div>
+            <hr class="rewardline">
+        </div>
+
+        
+    </section>
+
+
+
+    <!--Footer-->
+    <section class="contact">
+        <div class="contactdiv">
+            <h2>Contact info</h2>
+            <table class="contacttable">
+                <tr>
+                    <td class="contactcell">
+                        <h5 class="contactques">Main Location:</h5><span class="contactinfo">Malaysia</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contactcell">
+                        <h5 class="contactques">Phone No:</h5><span class="contactinfo">012-3457890</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contactcell">
+                        <h5 class="contactques">E-mail:</h5><span class="contactinfo">burgerbrosmsia@gmail.com</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="socialmedialogos">
+                <a href="https://www.instagram.com/">
+                    <img class="socialmedia" src="../social media logo/instagram.png" alt="#">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="socialmedia" src="../social media logo/facebook.png" alt="#">
+                </a>
+                <a href="https://twitter.com/">
+                    <img class="socialmedia" src="../social media logo/twitter.png" alt="#">
+                </a>
+            </div>
+        </div>
+        <div id='map' style='width: 400px; height: 200px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmFuZ2Jvb210YXRhIiwiYSI6ImNrdjBneWc5ajA2ZXoyeHA3eDAzd2cxaTkifQ.z0FsPLibJBIcBzLMbtEGBw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-71.060982, 42.35725],
+                zoom: 18,
+            });
+        </script>
+    </section>
+</body>
+</html>

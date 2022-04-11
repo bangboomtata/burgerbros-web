@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <title>Sign up</title>
+<style>
+  body {
+    background: rgb(163, 188, 182);
+    background: linear-gradient(90deg, rgba(163, 188, 182, 1) 8%, rgba(218, 222, 212, 1) 100%);
+    font-family: Arial, Helvetica, Calibri;
+  }
+
+  h1,
+  h2 {
+    color: #3C403D
+  }
+
+  .state,
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0 22px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 50px;
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  button {
+    background-color: #39603D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button[type=submit] {
+    background: #39603D;
+    color: white;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .form {
+    padding: 16px;
+  }
+
+  .container1 {
+    width: 30%;
+    margin: 3.125rem auto;
+    padding: 30px 50px;
+    border-radius: 45px;
+    background: #DADED4;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+</style>
+
+<body>
+  <div class="container1">
+    <h1 style="text-align:center;">Burger Bros</h1>
+    <h2 style="text-align:center;">Create Your Account Now</h2>
+    <form>
+      <hr>
+      <label for=" fname"><b>First Name</b></label><br />
+      <input type="text" name="fname" id="fname" required><br />
+      <br />
+      <label for="lname"><b>Last Name</b></label><br />
+      <input type="text" name="lname" id="lname" required><br />
+      <br />
+      <label for="email"><b>Email Address</b></label><br />
+      <input type="text" name="email" id="email" required><br />
+      <br />
+      <label for="phoneno"><b>Phone Number</b></label><br />
+      <input type="text" name="phoneno" id="phoneno" required><br />
+      <br />
+      <label for="address"><b>Address</b></label><br />
+      <input type="text" name="address" id="address" required><br />
+      <br />
+      <label for="state"><b>State</b></label>
+      <select id="state" class="state">
+        <option value="WP">WP</option>
+        <option value="Selangor">Selangor</option>
+        <option value="Penang" selected="selected">Penang</option>
+        <option value="Johor">Johor</option>
+        <option value="Kedah">Kedah</option>
+        <option value="Kelantan">Kelantan</option>
+        <option value="Melaka">Melaka</option>
+        <option value="NegeriSembilan">Negeri Sembilan</option>
+        <option value="Pahang">Pahang</option>
+        <option value="Perlis">Perlis</option>
+        <option value="Perak">Perak</option>
+        <option value="Terengganu">Terengganu</option>
+        <option value="Sabah">Sabah</option>
+        <option value="Sarawak">Sarawak</option>
+      </select><br />
+      <br />
+      <label for="city"><b>City</b></label><br />
+      <input type="text" name="city" id="city" required><br />
+      <br />
+      <label for="pstcde"><b>Postcode</b></label><br />
+      <input type="text" name="pstcde" id="pstcde" maxlength="5" required><br />
+      <br />
+      <label for="loginpass"><b>Password</b></label><br />
+      <input type="password" name="loginpass" id="loginpass" maxlength="20" required><br />
+      <br />
+      <label for="cnfrmpass"><b>Confirm Password</b></label><br />
+      <input type="password" name="cnfrmpass" id="cnfrmpass" maxlength="20" required><br />
+      <br />
+      <a href="../Home/index.html" ><button type="submit" onclick="document.location='../Home/index.html'"><b>Create Account</b></button></a>
+      <br />
+      <br />
+      <p>By creating an account, you agree to Burger Bros' <a href="#">Terms and Conditions & Policy Privacy</a></p>
+  </div>
+  </form>
+  </div>
+</body>
+
+</html>

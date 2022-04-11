@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deals</title>
+    <link rel="stylesheet" href="deals.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <style>
+        .nav-item {
+            text-decoration: none;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <div class="container1">
+                <a href="../Home/index.html" class="logoname">Burger Bros</a>
+                <ul class="navbar-list">
+                    <div id="nav-items">
+                        <li class="nav-item">
+                            <a href="../Home/index.html">
+                                <img src="../Icons/home.png" alt="Home Page" height="20px" wieght="20px">
+                                <span class="navdesc">Home</span>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="nav-item">
+                        <a href="../Menu/menu.html">
+                            <img src="../Icons/burger.png" alt="Food Menu" height="20px" wieght="20px">
+                            <span class="navdesc">Menu</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Deals/Deals.html">
+                            <img src="../Icons/megaphone.png" alt="Deals" height="20px" wieght="20px">
+                            <span class="navdesc">Deals</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Shopping Cart/shopping_cart.html">
+                            <img src="../Icons/shopping-cart.png" alt="Shopping Cart" height="20px" wieght="20px">
+                            <span class="navdesc">Shopping Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../E-wallet/ewallet.html">
+                            <img src="../Icons/wallet.png" alt="Wallet" height="20px" wieght="20px">
+                            <span class="navdesc">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Login_Sign up/login.html">
+                            <img src="../Icons/user.png" alt="login/signup" height="20px" wieght="20px">
+                            <span class="navdesc">Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <iframe class="video" src="https://www.youtube.com/embed/V5w1OGknhlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--Search bar-->
+    <div class="searchbar">
+        <input type="text" class="searchbar-input" placeholder="Search...">
+        <img src="../Icons/search.png" alt="#" class="searchbar-img">
+    </div>
+    <!--new items-->
+    <section class="dealsec">
+        <p style="text-align:center;color: #39603D; font-size:100px;font-weight:bold;font-family:Amasis MT Pro Black">Deals</p>
+        <div class="secdisplay">
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Food images/fooditem1.jpg" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Super Offer Time!!!</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">Get
+                    your super offer up to 50% at 2pm-4pm and 9pm-11pm!!!</p>
+            </a>
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Food images/fooditem2.jpg" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Coming Soon!!</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">
+                    Double Spicy Crispy Chicken Burgers Coming Soon in 10 December 2021!</p>
+            </a>
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Food images/fooditem3.jpg" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Get 10% offer now</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">Now
+                    order for delivery and get a 10% offer discount</p>
+            </a>
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Food images/fooditem4.jpg" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Redeem free Burger!</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">
+                    Collect your points and redeem a free burger in any store!!</p>
+            </a>
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Food images/cheeseburge.jpg" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Meals only 9.99!!</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">
+                    Choose your own set meals in just RM9.99!</p>
+            </a>
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Food images/Crispy fried fish burger.jpeg" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">2
+                    Set with only RM30!!</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">
+                    Choose any Burgers Set with just RM15! Save Up to 20%!!</p>
+            </a>
+            <a href="../Menu/menu.html" class="foodcon"
+                style="text-align:center">
+                <img class="foodimg" src="../Icons/recommendation.png" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Recommendation</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">
+                    Just for you.</p>
+            </a>
+            <a href="#" class="foodcon" style="text-align:center">
+                <img class="foodimg" src="../Icons/opinion.png" alt="#">
+                <p class="fooddesc"
+                    style="text-align:center;font-size:25px;font-weight:bold;color:#3C403D;font-family:Comic Sans MT">
+                    Help Us Improve</p>
+                <p style="text-align:center;font-size:15px;font-weight:bold;color:#39603D;font-family:Comic Sans MT">
+                    Give Your opinion about us in here.</p>
+            </a>
+    </section>
+
+
+    <!--Deals-->
+
+  <!--Footer-->
+  <section class="contact">
+    <div class="contactdiv">
+      <h2>Contact info</h2>
+      <table class="contacttable">
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Main Location:</h5><span class="contactinfo">Malaysia</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">Phone No:</h5><span class="contactinfo">012-3457890</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="contactcell">
+            <h5 class="contactques">E-mail:</h5><span class="contactinfo">burgerbrosmsia@gmail.com</span>
+        </td>
+        </tr>
+      </table>
+      <div class="socialmedialogos">
+        <a href="https://www.instagram.com/">
+          <img class="socialmedia" src="../social media logo/instagram.png" alt="#">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img class="socialmedia" src="../social media logo/facebook.png" alt="#">
+        </a>
+        <a href="https://twitter.com/">
+          <img class="socialmedia" src="../social media logo/twitter.png" alt="#">
+        </a>
+      </div>
+    </div>
+    <div id='map' style='width: 400px; height: 200px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYmFuZ2Jvb210YXRhIiwiYSI6ImNrdjBneWc5ajA2ZXoyeHA3eDAzd2cxaTkifQ.z0FsPLibJBIcBzLMbtEGBw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      });
+    </script>
+  </section>
+</body>
+
+</html>
